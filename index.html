@@ -186,4 +186,112 @@ footer {
 
 </body>
 
+<style>
+
+.dashboard {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 25px 15px;
+
+    color: white;
+
+}
+
+.dashboard h1 {
+
+    color: #d71920;
+
+    letter-spacing: 4px;
+
+}
+
+.dash-card {
+
+    background: #171717;
+
+    border: 1px solid #641014;
+
+    border-radius: 15px;
+
+    padding: 18px;
+
+    margin: 15px 0;
+
+}
+
+.dash-button {
+
+    background: #8b1018;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+
+}
+
+</style>
+
+<div class="dashboard" id="dashboard">
+
+    <h1>777 SECURITY</h1>
+
+    <p>ЛИЧНЫЙ КАБИНЕТ</p>
+
+    <div class="dash-card">
+
+        <h3>СТАТУС АККАУНТА</h3>
+
+        <p>Защита: информационный режим</p>
+
+    </div>
+
+    <div class="dash-card">
+
+        <h3>БЕЗОПАСНОСТЬ</h3>
+
+        <p>Проверяйте активные сеансы Telegram</p>
+
+        <p>Используйте двухэтапную аутентификацию</p>
+
+    </div>
+
+    <div class="dash-card">
+
+        <h3>777 SECURITY</h3>
+
+        <p>Ваш центр информации о безопасности</p>
+
+    </div>
+
+</div>
+
+<script>
+
+const oldButton = document.querySelector('.notice button');
+
+if (oldButton) {
+
+    oldButton.onclick = function() {
+
+        document.querySelector('.notice').style.display = 'none';
+
+        this.style.display = 'none';
+
+        document.getElementById('dashboard').style.display = 'block';
+
+    };
+
+}
+
+</script>
+  
 </html>
