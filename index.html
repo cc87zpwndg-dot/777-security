@@ -174,7 +174,7 @@ footer {
 
   <br>
 
-  <button onclick="this.textContent='ОКНО ЗАКРЫТО'; this.disabled=true;">
+  <button onclick="if (window.Telegram && window.Telegram.WebApp) { window.Telegram.WebApp.close(); }">
 
     ПОНЯТНО
 
